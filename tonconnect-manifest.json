@@ -1,7 +1,7 @@
 {
-  "url": "chance-game.ton",
+  "url": "https://ChanceApp.ton",
   "name": "Chance",
-  "iconUrl": "https://raw.githubusercontent.com/Zewsic/myCloud/refs/heads/main/photo_2025-06-11%2022.07.05.jpeg",
-  "termsOfUseUrl": "http://t.me/ChanceAppBot", 
-  "privacyPolicyUrl": "http://t.me/ChanceAppBot"
+  "iconUrl": "https://raw.githubusercontent.com/Zewsic/myCloud/refs/heads/main/chance-icon.png",
+  "termsOfUseUrl": "https://t.me/ChanceAppBot",
+  "privacyPolicyUrl": "https://t.me/ChanceAppBot"
 }
