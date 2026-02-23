@@ -14,11 +14,7 @@ WGET_MAX_PARALLEL=5
 MODEL_LOG="${MODEL_LOG:-/var/log/portal/comfyui.log}"
 
 # Model declarations: "URL|OUTPUT_PATH"
-HF_MODELS=(
-  "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors|${MODELS_DIR}/diffusion_models/flux-2-klein-9b-fp8.safetensors"
-  "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors|${MODELS_DIR}/vae/flux2-vae.safetensors"
-  "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors|${MODELS_DIR}/text_encoders/qwen_3_8b_fp8mixed.safetensors"
-  
+HF_MODELS=(  
   # "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/clip_l.safetensors|${MODELS_DIR}/text_encoders/clip_l.safetensors"
   # "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors|${MODELS_DIR}/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors"
   # "https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/resolve/main/split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors|${MODELS_DIR}/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors"
