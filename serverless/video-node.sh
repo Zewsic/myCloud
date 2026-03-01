@@ -15,7 +15,6 @@ MODEL_LOG="${MODEL_LOG:-/var/log/portal/comfyui.log}"
 
 # Model declarations: "URL|OUTPUT_PATH"
 HF_MODELS=(
-    # LTX-2
     "https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-19b-dev-fp8.safetensors
     |$MODELS_DIR/checkpoints/ltx-2-19b-dev-fp8.safetensors"
 
@@ -28,10 +27,10 @@ HF_MODELS=(
     "https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-spatial-upscaler-x2-1.0.safetensors
     |$MODELS_DIR/latent_upscale_models/ltx-2-spatial-upscaler-x2-1.0.safetensors"
 
-    "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors
-    |$MODELS_DIR/vae/flux2-vae.safetensors"
+    "https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-19b-distilled-lora-384.safetensors
+    |$MODELS_DIR/loras/ltx-2-19b-distilled-lora-384.safetensors"
 
-    # Flux.2
+    # Flux.2 Dev
     "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors
     |$MODELS_DIR/diffusion_models/flux2_dev_fp8mixed.safetensors"
 
@@ -40,6 +39,18 @@ HF_MODELS=(
 
     "https://huggingface.co/ByteZSzn/Flux.2-Turbo-ComfyUI/resolve/main/Flux_2-Turbo-LoRA_comfyui.safetensors
     |$MODELS_DIR/loras/Flux_2-Turbo-LoRA_comfyui.safetensors"
+
+    # Flux.2 Klein
+    "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors
+    |$MODELS_DIR/diffusion_models/flux-2-klein-9b-fp8.safetensors"
+
+    "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors
+    |$MODELS_DIR/vae/flux2-vae.safetensors"
+
+    "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors
+    |$MODELS_DIR/text_encoders/qwen_3_8b_fp8mixed.safetensors"
+
+
 )
 
 # Wget declarations: "URL|OUTPUT_PATH"
